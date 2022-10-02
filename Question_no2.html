@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading"><h1>MY BLOG</h1></div>
+        <div class="sub-heading"><h2>Welcome to the  blog in <span class="bg-color">Mountains</span></h2></div>
+        <div class="main-container-2">
+            <img  class="image-1" src="https://www.w3schools.com/w3images/woods.jpg" alt="image">
+            <div class="left-side-blog"> 
+                <p>  <h4>I LEFT MY HEART IN THE MOUNTAINS</h4>  &ensp;14.07.2020</p>
+                <br>
+                <p> “Thousands of tired, nerve-shaken, over-civilized people are beginning to 
+                    find out that going to the mountains is going home; that wildness is a necessity",
+                     John Muir. Travel and holidays this summer will be radically different from what we
+                      have done in the last years. Most travelers will likely choose to stay closer to home
+                       and may adopt a more cautious approach to travel, looking for safe destinations.
+                        Proximity and moving within a socio-culturally similar geographical space can be
+                         decisive elements in increasing the sense of security for these guests. What will
+                    be the main reason to travel next summer? To reconnect with nature.
+                    Three months of quarantine have left physical and psychological traces in all of us,
+                     and exercise, returning to nature, and <span id="dots">...</span><span id="invisible-text">stimulating the senses will be the best remedy
+                      to truly return to normal. After the lockdown, it is advisable to dedicate the 
+                      summer to a sports activity of less intensity, but a lot of mobility and with a 
+                      longer duration like walking or hiking: an outdoor low-impact activity that makes
+                       us able to enjoy what has been desired and could not be done during the 
+                       quarantine, and as far as possible, accompanied by others.
+                    </span></p>
+                    
+                    
+                <button id="btn" onclick="MoreLess()">Read More</button> 
+            </div>
+        </div>
+        <div class="main-container-3">
+            <div class="right-side-blog-up">
+               <p><img class="image-2"
+                    src="https://www.w3schools.com/w3images/nature.jpg"
+                    alt="image">
+                    <br>
+                    &ensp;<strong>Connecting to Care</strong>
+                    <br>
+                    <p1>
+                    Call me crazy or cliche or what ever..but there is no denying it. Maybe it’s
+                     that dose of fresh mountain air, the exercise or the litres of water I drink
+                      when I’m hiking, but I swear to you that after a visit to the mountains I
+                       feel enormously better. It’s as if there is an energy source in those summits
+                        that you can tap into and feed off of. Getting out there literally fuels you
+                         and rebalances you; you will notably feel more calm and happy, and less
+                          irritable or anxious. There was never a time that I left the mountains
+                           without feeling refreshed, happy and inspired – ready to take on 
+                           anything that came my way.
+
+
+                </p>
+                  
+
+            </div>
+            <div class="right-side-blog-down">
+                <br>
+                <strong>Tags</strong>
+                <br>
+                <button class="button-1">Tour</button>
+                <button class="button-2">Park</button>
+                <button class="button-3">Travel</button>
+                <button class="button-4">Diy</button>
+                <button class="button-5">Tag</button>
+                <button class="button-6">Party</button>        
+            </div>
+        </div>
+    </div>
+    <script>
+        function MoreLess(){
+            var dots=document.getElementById("dots");
+            var invisibleText =document.getElementById("invisible-text");
+            var btnText = document.getElementById("btn");
+            if(dots.style.display!="none"){
+                 dots.style.display="none";
+                 invisibleText.style.display="inline";
+                 btnText.innerHTML="ReadLess";
+            }
+            else{
+                dots.style.display="inline";
+                invisibleText.style.display="none";
+                btnText.innerHTML="ReadMore";
+            }
+        }
+    </script>
+</body>
+</html>
